@@ -37,10 +37,14 @@ public class Perbaikanuts {
 
             switch (pilihan){
                 case 1:
-                  System.out.println("Masukkan Nama, Mata Kuliah, SKS, Nilai : ");
+                  System.out.println("Masukkan Nama, Mata Kuliah, SKS, Nilai");
+                  System.out.print("Nama Mahasiswa : ");
                   String namaMahasiswa = inputan.nextLine();
+                  System.out.print("Mata Kuliah : ");
                   String mataKuliah = inputan.nextLine();
+                  System.out.print("SKS : ");
                   int SKS = inputan.nextInt();
+                  System.out.print("Nilai : ");
                   int nilai = inputan.nextInt();
                   input.add(new Mahasiswa(namaMahasiswa, mataKuliah, SKS, nilai));
                   System.out.println("Mahasiswa berhasil ditambahkan");
